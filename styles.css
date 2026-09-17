@@ -1,4 +1,3 @@
-
 :root {
   --bg: #050505;
   --paper: #f3f3f3;
@@ -138,6 +137,7 @@ p {
 
 .button:hover {
   transform: translateY(-2px);
+  transition: transform 200ms ease;
 }
 
 .dot {
@@ -622,7 +622,7 @@ footer {
   border-radius: 50%;
   background: var(--text);
   transform: translateX(0);
-  transition: transform 320ms cubic-bezier(.2,.8,.2,1), background-color 280ms ease;
+  transition: transform 320ms cubic-bezier(.2, .8, .2, 1), background-color 280ms ease;
 }
 
 html[data-theme="dark"] .theme-knob {
@@ -653,6 +653,7 @@ textarea,
 }
 
 @media (max-width: 980px) {
+
   .project,
   .contact-grid,
   .banner-box {
@@ -810,16 +811,27 @@ textarea,
 }
 
 /* Hero load-in sequence */
-.home-hero > * {
+.home-hero>* {
   opacity: 0;
   transform: translateY(18px);
-  animation: hero-enter 700ms cubic-bezier(.2,.7,.2,1) forwards;
+  animation: hero-enter 700ms cubic-bezier(.2, .7, .2, 1) forwards;
 }
 
-.home-hero h1 { animation-delay: 80ms; }
-.home-hero .hero-status { animation-delay: 210ms; }
-.home-hero .hero-summary { animation-delay: 340ms; }
-.home-hero .hero-button { animation-delay: 470ms; }
+.home-hero h1 {
+  animation-delay: 80ms;
+}
+
+.home-hero .hero-status {
+  animation-delay: 210ms;
+}
+
+.home-hero .hero-summary {
+  animation-delay: 340ms;
+}
+
+.home-hero .hero-button {
+  animation-delay: 470ms;
+}
 
 @keyframes hero-enter {
   to {
@@ -840,8 +852,8 @@ textarea,
   opacity: 1;
   transform: translateY(0);
   transition:
-    opacity 650ms cubic-bezier(.2,.7,.2,1) var(--delay, 0ms),
-    transform 650ms cubic-bezier(.2,.7,.2,1) var(--delay, 0ms);
+    opacity 650ms cubic-bezier(.2, .7, .2, 1) var(--delay, 0ms),
+    transform 650ms cubic-bezier(.2, .7, .2, 1) var(--delay, 0ms);
 }
 
 .js .network-frame.reveal-block {
@@ -862,8 +874,8 @@ textarea,
 .js .reveal-project .project-shot {
   opacity: 0;
   transition:
-    opacity 700ms cubic-bezier(.2,.7,.2,1),
-    transform 700ms cubic-bezier(.2,.7,.2,1);
+    opacity 700ms cubic-bezier(.2, .7, .2, 1),
+    transform 700ms cubic-bezier(.2, .7, .2, 1);
 }
 
 .js .reveal-project .project-copy {
@@ -878,8 +890,8 @@ textarea,
   opacity: 1;
   transform: translateY(0) scale(1);
   transition:
-    opacity 650ms cubic-bezier(.2,.7,.2,1) var(--delay, 0ms),
-    transform 650ms cubic-bezier(.2,.7,.2,1) var(--delay, 0ms);
+    opacity 650ms cubic-bezier(.2, .7, .2, 1) var(--delay, 0ms),
+    transform 650ms cubic-bezier(.2, .7, .2, 1) var(--delay, 0ms);
 }
 
 .js .reveal-project.is-visible .project-copy,
@@ -895,7 +907,7 @@ textarea,
 .js .skill-row.reveal-block.is-visible {
   transition:
     opacity 600ms ease var(--delay, 0ms),
-    transform 600ms cubic-bezier(.2,.7,.2,1) var(--delay, 0ms),
+    transform 600ms cubic-bezier(.2, .7, .2, 1) var(--delay, 0ms),
     background-color 200ms ease;
 }
 
@@ -910,7 +922,7 @@ textarea,
     scroll-behavior: auto;
   }
 
-  .home-hero > *,
+  .home-hero>*,
   .js .reveal-text,
   .js .reveal-block,
   .js .reveal-project,
@@ -1027,4 +1039,47 @@ textarea,
   .github-icon-link {
     transition: none;
   }
+}
+
+/* Project role details */
+.project-role-details {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.role-heading {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.project-role {
+  margin-bottom: 0;
+  color: var(--text) !important;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+
+/* Short feature lists for project cards */
+.project-feature-details {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.project-features {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.project-features li+li {
+  margin-top: 4px;
 }
