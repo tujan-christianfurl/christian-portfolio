@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Christian Furl Tujan</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="container nav">
+      <a class="logo" href="index.html">CFT.</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="techstacks.html">Tech Stacks</a>
+        <a class="active" href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-track" aria-hidden="true"><span class="theme-knob"></span></span>
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container page-title page-centered-title">
+        <div class="section-kicker">Skills</div>
+        <h1>How I work</h1>
+        <p>This page highlights both my technical ability and the personal strengths that help me contribute well to projects and teams.</p>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><div><div class="section-kicker">Technical</div><h2>Core skills</h2></div><p>The percentages below are simple visual indicators that you can adjust to match how you want to present your current confidence level.</p></div>
+          <div class="skill-row"><strong>Frontend</strong><div class="skill-meter"><span style="width: 89%"></span></div><span>89%</span></div>
+          <div class="skill-row"><strong>Backend</strong><div class="skill-meter"><span style="width: 65%"></span></div><span>65%</span></div>
+          <div class="skill-row"><strong>Database</strong><div class="skill-meter"><span style="width: 82%"></span></div><span>82%</span></div>
+          <div class="skill-row"><strong>UI Planning</strong><div class="skill-meter"><span style="width: 92%"></span></div><span>92%</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><div><div class="section-kicker">Attributes</div><h2>What I bring</h2></div><p>These are the traits I rely on most when collaborating, solving problems, and improving my work.</p></div>
+          <div class="grid-3">
+            <div class="card"><div class="card-number">01</div><h3>Problem Solving Skills</h3><p>Breaking down requirements and finding practical solutions that can actually be implemented.</p></div>
+            <div class="card"><div class="card-number">02</div><h3>Communication Skills</h3><p>Explaining ideas clearly, asking useful questions, and keeping teammates updated.</p></div>
+            <div class="card"><div class="card-number">03</div><h3>Teamworking Skills</h3><p>Working collaboratively, sharing responsibility, and adjusting based on feedback.</p></div>
+            <div class="card"><div class="card-number">04</div><h3>Adaptability Skills</h3><p>Learning new things, tools and changing approaches when a project calls for something different.</p></div>
+            <div class="card"><div class="card-number">05</div><h3>Attention to Detail</h3><p>Utmost attention to consistency, accuracy, and small issues and problems that affect the overall experience.</p></div>
+            <div class="card"><div class="card-number">06</div><h3>Continuous Learning</h3><p>Improving through projects, documentation, experimentation, and feedback.</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container"><span>Christian Furl Tujan</span><span>Skills</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

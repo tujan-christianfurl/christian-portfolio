@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Christian Furl Tujan</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="container nav">
+      <a class="logo" href="index.html">CFT.</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="techstacks.html">Tech Stacks</a>
+        <a href="skills.html">Skills</a>
+        <a class="active" href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-track" aria-hidden="true"><span class="theme-knob"></span></span>
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container page-title page-centered-title">
+        <div class="section-kicker">Contact</div>
+        <h1>Let’s talk</h1>
+        <p>Use the form for collaborations, project inquiries, internship opportunities, or simply to connect with me.</p>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <div class="section-kicker">Contact details</div>
+            <h2>Get in touch</h2>
+            <p>Contact me through my various links below.</p>
+            <div class="contact-links">
+              <a href="mailto:furltujan07@email.com">24100824@usc.edu.ph</a>
+              <a href="mailto:furltujan07@email.com">furltujan07@gmail.com</a>
+              <a target="_blank" href="https://www.github.com/tujan-christianfurl">github.com/tujan-christianfurl</a>
+              <a target="_blank" href="https://www.linkedin.com/in/christian-furl-tujan-455696422">www.linkedin.com/in/christian-furl-tujan-455696422</a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="mailto:furltujan07@email.com" method="post" enctype="text/plain">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+              </div>
+              <div>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="What is this about?">
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button class="button" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container"><span>Christian Furl Tujan</span><span>Contact</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Stacks | Christian Furl Tujan</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="container nav">
+      <a class="logo" href="index.html">CFT.</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="techstacks.html">Tech Stacks</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-track" aria-hidden="true"><span class="theme-knob"></span></span>
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container page-title page-centered-title">
+        <div class="section-kicker">Tech Stacks</div>
+        <h1>Tools I use</h1>
+        <p>These are the technologies and platforms I have used through projects, coursework, and development practice.</p>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><div><div class="section-kicker">Frontend</div><h2>Frontend Tools</h2></div><p>I use these tools to structure interfaces, style pages, and create clean user experiences.</p></div>
+          <div class="tech-list">
+            <div class="tech-item"><strong>HTML</strong><i class="devicon-html5-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>CSS</strong><i class="devicon-css3-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>JavaScript</strong><i class="devicon-javascript-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>Flutter</strong><i class="devicon-flutter-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>.NET MAUI</strong><i class="devicon-dotnetcore-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>React.JS</strong><i class="devicon-react-original tech-icon" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><div><div class="section-kicker">Backend & Data</div><h2>Logic and storage</h2></div><p>These technologies help me handle server-side logic, data management, and programming tasks.</p></div>
+          <div class="tech-list">
+            <div class="tech-item"><strong>PHP</strong><i class="devicon-php-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>MySQL</strong><i class="devicon-mysql-original tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>Java</strong><i class="devicon-java-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>Node.js</strong><i class="devicon-nodejs-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>Firebase</strong><i class="devicon-firebase-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>Supabase</strong><i class="devicon-supabase-plain tech-icon" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><div><div class="section-kicker">Workflow</div><h2>Development tools</h2></div><p>These tools support my design process, version control workflow, and everyday coding environment.</p></div>
+          <div class="tech-list">
+            <div class="tech-item"><strong>Git</strong><i class="devicon-git-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>GitHub</strong><i class="devicon-github-original tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>Figma</strong><i class="devicon-figma-plain tech-icon" aria-hidden="true"></i></div>
+            <div class="tech-item"><strong>Canva</strong><i class="devicon-canva-original tech-icon" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container"><span>Christian Furl Tujan</span><span>Tech Stacks</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

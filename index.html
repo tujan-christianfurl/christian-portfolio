@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Furl Tujan | Portfolio</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="container nav nav-home">
+      <a class="logo" href="index.html">CFT.</a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="techstacks.html">Tech Stacks</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-track" aria-hidden="true"><span class="theme-knob"></span></span>
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container home-hero">
+        <h1>CHRISTIAN FURL<br>TUJAN</h1>
+
+        <div class="hero-status"> 
+          <span class="dot"></span>
+          <span>Available for freelance work and projects</span>
+        </div>
+
+        <p class="hero-summary">
+          I’m currently a 3rd year IT student in the University of San Carlos. I am an aspiring full stack developer who enjoys building useful systems, creating clean interfaces, and continuously improving my dev skills. I love discovering new things, eating food, and playing sports.
+        </p>
+
+        <a class="button hero-button" href="contact.html">Say Hi!</a>
+      </section>
+
+      <section class="container network-section">
+        <div class="network-head">
+          <div class="section-kicker">Unified Web</div>
+          <h2>Tech stacks & strengths</h2>
+          <p>
+            These are the things i find to be my greatest strengths all combined into one web.
+          </p>
+        </div>
+
+        <div class="network-frame">
+          <svg class="network-svg" viewBox="0 0 960 560" role="img" aria-label="Polygon web showing Christian's technologies and strengths">
+            <g class="network-lines">
+              <line x1="115" y1="190" x2="305" y2="95"></line>
+              <line x1="305" y1="95" x2="585" y2="105"></line>
+              <line x1="585" y1="105" x2="780" y2="210"></line>
+              <line x1="780" y1="210" x2="760" y2="385"></line>
+              <line x1="760" y1="385" x2="555" y2="460"></line>
+              <line x1="555" y1="460" x2="270" y2="445"></line>
+              <line x1="270" y1="445" x2="115" y2="190"></line>
+
+              <line x1="115" y1="190" x2="410" y2="275"></line>
+              <line x1="305" y1="95" x2="410" y2="275"></line>
+              <line x1="585" y1="105" x2="555" y2="250"></line>
+              <line x1="780" y1="210" x2="555" y2="250"></line>
+              <line x1="555" y1="250" x2="410" y2="275"></line>
+              <line x1="410" y1="275" x2="360" y2="360"></line>
+              <line x1="360" y1="360" x2="270" y2="445"></line>
+              <line x1="360" y1="360" x2="555" y2="250"></line>
+              <line x1="360" y1="360" x2="555" y2="460"></line>
+              <line x1="555" y1="460" x2="760" y2="385"></line>
+            </g>
+
+            <g class="network-nodes">
+              <circle cx="115" cy="190" r="4"></circle>
+              <circle cx="305" cy="95" r="4"></circle>
+              <circle cx="585" cy="105" r="4"></circle>
+              <circle cx="780" cy="210" r="4"></circle>
+              <circle cx="760" cy="385" r="4"></circle>
+              <circle cx="555" cy="460" r="4"></circle>
+              <circle cx="270" cy="445" r="4"></circle>
+              <circle cx="410" cy="275" r="4"></circle>
+              <circle cx="360" cy="360" r="4"></circle>
+              <circle cx="555" cy="250" r="4"></circle>
+            </g>
+
+            <g class="network-labels">
+              <text x="42" y="186">HTML / CSS</text>
+              <text x="245" y="75">JavaScript</text>
+              <text x="544" y="88">PHP</text>
+              <text x="793" y="214">Flutter</text>
+              <text x="770" y="408">Teamwork</text>
+              <text x="500" y="488">Java</text>
+              <text x="168" y="470">Node.js</text>
+              <text x="366" y="264">Java</text>
+              <text x="282" y="384">Communication</text>
+              <text x="505" y="244">React</text>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section home-project-preview">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Project Preview</div>
+              <h2>Some of my work</h2>
+            </div>
+            <p>
+              My project page contains fuller descriptions and screenshots, but here is a quick preview of the systems and concepts I have worked on.
+            </p>
+          </div>
+
+          <div class="project-list">
+            <article class="project">
+              <div class="project-copy">
+                <div>
+                  <h3>AlloTrack</h3>
+                  <p>
+                    An allowance tracking mobile app primarily designed for students who receive thier allowances.
+                  </p>
+                </div>
+                <div class="tags">
+                  <span class="tag">Allowance Tracker</span>
+                  <span class="tag">Flutter</span>
+                  <span class="tag">Node.Js</span>
+                </div>
+              </div>
+              <div class="project-shot">
+                <div class="placeholder">screenshot </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-copy">
+                <div>
+                  <h3>Momento</h3>
+                  <p>
+                    Momento is a collaborative album application built with React Native (Expo) that allows multiple users to create, share, and contribute to albums for events and memories.
+                  </p>
+                </div>
+                <div class="tags">
+                  <span class="tag">Collaborative Album App</span>
+                  <span class="tag">React Native</span>
+                  <span class="tag">Typescript</span>
+                </div>
+              </div>
+              <div class="project-shot">
+                <div class="placeholder">screenshot </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="actions center-actions">
+            <a class="button" href="projects.html">View Project Page</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section home-contact-banner">
+        <div class="container banner-box">
+          <div>
+            <div class="section-kicker">Contact</div>
+            <h2>Want to work with me?</h2>
+            <p>
+              If you want to collaborate, ask about a project, or reach out for opportunities, head over to the contact page and send me a hello.
+            </p>
+          </div>
+          <a class="button" href="contact.html">Go to Contact Page</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <span>Christian Furl Tujan</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

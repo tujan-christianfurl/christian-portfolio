@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Christian Furl Tujan</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="container nav">
+      <a class="logo" href="index.html">CFT.</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="techstacks.html">Tech Stacks</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-track" aria-hidden="true"><span class="theme-knob"></span></span>
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container page-title page-centered-title">
+        <div class="section-kicker">Projects</div>
+        <h1>Things I’ve built</h1>
+        <p>Here are the systems and concepts I have worked on. Each project highlights the problem, a short description, and a space for frontend screenshots.</p>
+      </section>
+
+      <section class="section">
+        <div class="container project-list">
+          <article class="project">
+            <div class="project-copy">
+              <div>
+                <div class="section-kicker">Allowance Tracker App</div>
+                <h3>AlloTrack</h3>
+                <p>An allowance tracking mobile app primarily designed for students who receive thier allowances. It helps them track thier allowances, budgeting, and thier utang or people who has utang to them.</p>
+              </div>
+              <div class="project-bottom">
+                <div class="tags">
+                  <span class="tag">Flutter</span><span class="tag">Node.Js</span><span class="tag">Firebase</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-shot">
+                <div class="placeholder"><img src="assets/dashboard.png" alt="AlloTrack dashboard screenshot"></div>
+              </div>
+              <div class="github-icon-wrap">
+                <a class="github-icon-link" href="https://github.com/tujan-christianfurl/allotrack" target="_blank" rel="noopener noreferrer" aria-label="Visit AlloTrack on GitHub" title="Visit GitHub">
+                  <i class="devicon-github-original" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-copy">
+              <div>
+                <div class="section-kicker">Collaborative Album App</div>
+                <h3>Momento</h3>
+                <p>Momento is a collaborative album application built with React Native (Expo) that allows multiple users to create, share, and contribute to albums for events and memories.</p>
+                <br>
+                <p>Unlike simple photo storage apps, Momento focuses on shared experiences, where users can collectively build and view albums in real time.</p>
+              </div>
+              <div class="project-bottom">
+                <div class="tags">
+                  <span class="tag">React Native</span><span class="tag">Typescript</span><span class="tag">Firebase</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-shot">
+                <div class="placeholder"><img src="assets/dashboard.png" alt="Momento screenshot"></div>
+              </div>
+              <div class="github-icon-wrap">
+                <a class="github-icon-link" href="https://github.com/cl1ffhan9er/Momento" target="_blank" rel="noopener noreferrer" aria-label="Visit Momento on GitHub" title="Visit GitHub">
+                  <i class="devicon-github-original" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-copy">
+              <div>
+                <div class="section-kicker">Food Delivery App</div>
+                <h3>Nico's Food Delivery</h3>
+                <p>A food delivery app for a local restaurant called Nico's Food Delivery. Built with HTML, CSS, JavaScript, and PHP</p>
+              </div>
+              <div class="project-bottom">
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">Javascript</span><span class="tag">PHP</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-shot">
+                <div class="placeholder"><img src="assets/dashboard.png" alt="Nico's Delivery screenshot"></div>
+              </div>
+              <div class="github-icon-wrap">
+                <a class="github-icon-link" href="https://github.com/Nico-s-Development-Team/Web-IM2-Development-Projects.git" target="_blank" rel="noopener noreferrer" aria-label="Visit Momento on GitHub" title="Visit GitHub">
+                  <i class="devicon-github-original" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          
+
+          
+        </div>
+      </section>
+    </main>
+
+    <footer class="container"><span>Christian Furl Tujan</span><span>Projects</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
